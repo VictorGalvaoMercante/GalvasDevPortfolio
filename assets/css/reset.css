@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    max-width: 100%;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

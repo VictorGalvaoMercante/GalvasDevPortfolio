@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/background.css">
+    <link rel="stylesheet" href="./assets/css/sobremim.css">
+    <link rel="stylesheet" href="./assets/css/projetos.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
+    <link rel="stylesheet" href="./assets/css/responsividade.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Particles JS, Usei para fazer efeito Galáxia da minha Home-->
+    <div id="particles-js"></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+    <!-- HOME -->
+    <div class="home particles-js shadow-bottom">
+        <nav>
+            <div class="img">
+                <img src="./assets/img/eu.jpg" alt="img">
+                <a href="" class="name">VICTOR GALVAO</a>
+
+            </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="links" id="menuLinks">
+                <a href="">HOME</a>
+                <a href="#sobremim">SOBRE MIM</a>
+                <a href="#projetos">PROJETOS</a>
+                <a href="#contato">CONTATO</a>
+            </div>
+        </nav>
+        <section class="containerNome">
+
+            <h1 class="digitando" id="digitando"></h1>
+            <h2>Um desenvolvedor Front-End orientado a resultados, dedicado a criar e manter sites e aplicativos web
+                <br>
+                em alta qualidade que impulsionam o engajamento do usuário e contribuem para o sucesso do produto.
+            </h2>
+
+            <div class="icons">
+                <p><a href="https://www.linkedin.com/in/victor-mercante/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></p>
+                <p><a href="https://github.com/VictorGalvaoMercante/" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a></p>
+                <button><a href="assets/pdf/CV VICTOR MERCANTE.pdf" download="CV VICTOR MERCANTE">DOWNLOAD
+                        CV</a></button>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- SOBRE MIM -->
+
+    <div class="sobremim" id="sobremim">
+        <section>
+            <div class="title block">
+                <h1>SOBRE MIM</h1>
+                <p>Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais,
+                    <br>principalmente em termos de programação e tecnologia.
+                </p>
+            </div>
+            <div class="sectionSobreMim">
+                <div class="apresentacao block">
+                    <h2><strong>Venha me conhecer!</strong></h2>
+                    <p>Sou um <strong>desenvolvedor web com foco em front-end</strong> , criando e gerenciando a
+                        interface gráfica de sites e
+                        aplicativos web, o que leva ao sucesso geral do produto. Confira alguns dos meus trabalhos na
+                        seção Projetos .
+                        Sou movido pelo desejo de me manter atualizado com as mais
+                        recentes tecnologias, tendências e metodologias de desenvolvimento, sempre buscando maneiras de
+                        aprimorar minhas habilidades técnicas e profissionais. Além de ser dedicado ao aprendizado
+                        contínuo, sou altamente motivado a aplicar o que aprendo em projetos reais, colaborando com
+                        equipes e contribuindo para soluções inovadoras e eficazes.
+                        Estou aberto a <strong>oportunidades de emprego</strong> nas quais eu possa contribuir, aprender
+                        e crescer. Se
+                        você tiver uma boa oportunidade que corresponda às minhas habilidades e experiência, não hesite
+                        em entrar em contato.
+                    </p><br>
+                    <a href="#contato" class="block">CONTATO</a>
+                </div>
+                <div class="habilidades">
+                    <h2><strong>Minhas Habilidades</strong></h2>
+                    <ul class="lista view">
+                        <li class="block">HTML</li>
+                        <li class="block">CSS</li>
+                        <li class="block">JAVASCRIPT</li>
+                        <li class="block">REACT</li>
+                        <li class="block">NODE</li>
+                        <li class="block">JAVA</li>
+                        <li class="block">SQL</li>
+                        <li class="block">RESPONSIVIDADE</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="projetos" id="projetos">
+        <div class="title block">
+            <h1>PROJETOS</h1>
+            <p>Aqui você encontrará alguns dos projetos pessoais e de clientes que criei, <br> cada projeto contendo seu
+                próprio estudo de caso.
+            </p>
+        </div>
+
+        <div class="containerProjetos">
+            <div class="projeto">
+                <img src="assets/img/pc-removebg-preview.png" alt="" class="blockRight">
+
+                <div class="infoProjeto block">
+                    <h1><strong>LISTA DE TAREFAS</strong></h1>
+                    <p>
+                        Esse projeto é uma aplicação na qual você pode editar e deletar as tarefas adicionadas.
+                        Desenvolvi esse projeto para aprofundar meus conhecimentos em REACT.JS, MONGODB e APIs.
+
+                    </p>
+                    <a href="https://github.com/VictorGalvaoMercante/ListaDeTarefas" target="_blank">VISITE AQUI</a>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="assets/img/Project1.PNG" alt="" class="blockRight">
+
+                <div class="infoProjeto block ">
+                    <h1><strong>MAPA INTERATIVO</strong></h1>
+                    <p>
+                        Mapa Interativo é um projeto que tem como objetivo facilitar a inserção e manipulação de dados
+                        através do Google Sheets. <br> Esse projeto foi feito junto com o mapeamento dos pontos de rede,
+                        ao passar o mouse por cada ponto abre um popup, mostrando as informações daquele ponto.<br>
+
+                    </p>
+                    <a href="https://victorgalvaomercante.github.io/Mapa-Interativo-/" target="_blank">VISITE AQUI</a>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="assets/img/Project2.PNG" alt="" class="blockRight">
+
+                <div class="infoProjeto block">
+                    <h1><strong>ABC CONTABILIDADE</strong></h1>
+                    <p>
+                        Esse projeto foi desafiador pois foi a primeira vez que apliquei responsividade. Foi uma ótima
+                        experiência para mim contruir o frontend inteiro.
+
+                    </p>
+                    <a href="https://victorgalvaomercante.github.io/ModeloSite/" target="_blank">VISITE AQUI</a>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="assets/img/Project3.PNG" alt="" class="blockRight">
+
+                <div class="infoProjeto block">
+                    <h1><strong>VALIDAÇÃO DE SENHAS</strong></h1>
+                    <p>
+                        Esse projeto foi a primeira vez que usei expressões regulares (regex) para fazer a validação de
+                        senhas, e foi muito desafiador no começo, mas fundamental para o aprendizado
+
+                    </p>
+                    <a href="https://victorgalvaomercante.github.io/ValidacaoDeSenhas/" target="_blank">VISITE AQUI</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="contato" id="contato">
+            <div class="title">
+                <h1>CONTATO</h1>
+                <P> Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e entrarei em contato
+                    com você o mais breve possível.</P>
+            </div>
+            <form action="https://formsubmit.co/galvaomercante@gmail.com" method="POST" class="form-contato">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://kit.fontawesome.com/c1c74833e8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticlesS.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

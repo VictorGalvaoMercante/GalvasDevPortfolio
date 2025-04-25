@@ -1,0 +1,449 @@
+/*Pequenos celulares	≤ 320px	Ajustes finos para celulares antigos/pequenos
+Celulares padrão	≤ 480px	Layout para smartphones comuns
+Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
+
+
+/*HOME*/
+@media (max-width: 430px) {
+
+
+  nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 13vh;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    padding-right: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    background-color: rgb(255, 255, 255);
+
+
+  }
+
+  nav .name {
+    display: flex;
+    font-size: 12pt;
+
+    height: 13vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home {
+    height: 90vh;
+  }
+
+
+  nav .img img {
+
+    width: 15%;
+    margin-right: 10px;
+  }
+
+  nav a {
+    font-size: 10pt;
+    margin: 5px 10px;
+  }
+
+  .home .containerNome h1 {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .home .containerNome h2 {
+    font-size: 12pt;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .home .icons {
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+  }
+
+  .home .icons p {
+    font-size: 20pt;
+    margin: 10px;
+  }
+
+  .home .icons button {
+    font-size: 10pt;
+    padding: 8px;
+  }
+}
+
+/*SOBRE MIM*/
+
+@media (max-width: 430px) {
+  .sobremim .sectionSobreMim {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140ch;
+    padding: 10px;
+
+
+  }
+
+  .title h1 {
+    padding-top: 20%;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao {
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .sobremim .sectionSobreMim .apresentacao h2 {
+    font-size: 18pt;
+    margin-top: 70%;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao p {
+    font-size: 12pt;
+    margin-bottom: 5%;
+  }
+
+  .sobremim .sectionSobreMim .habilidades {
+    margin-top: 5%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sobremim .sectionSobreMim .habilidades h2 {
+    font-size: 18pt;
+    text-align: center;
+
+  }
+
+
+  .sobremim .sectionSobreMim .habilidades .lista {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  .sobremim .sectionSobreMim .habilidades .lista li {
+    font-size: 12pt;
+    padding: 0.8rem;
+  }
+
+  .sobremim .title h1 {
+    font-size: 22pt;
+  }
+
+  .sobremim .title p {
+    font-size: 14pt;
+  }
+}
+
+/*PROJETOS*/
+.projetos .title h1 {
+  font-size: 22pt;
+}
+
+.projetos .title p {
+  font-size: 14pt;
+}
+
+.projetos .projeto {
+
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+  width: auto;
+}
+
+.projetos .projeto .infoProjeto {
+  width: 80%;
+  text-align: center;
+}
+
+.projetos .projeto .infoProjeto h1 {
+  font-size: 18pt;
+}
+
+.projetos .projeto .infoProjeto p {
+  font-size: 12pt;
+}
+
+.projetos .projeto .infoProjeto a {
+  padding: 8px;
+  font-size: 10pt;
+}
+
+
+
+
+@media (max-width: 390px) {
+  .sobremim .sectionSobreMim {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140ch;
+    width: 100vw;
+
+
+  }
+
+  .title h1 {
+    padding-top: 20%;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao h2 {
+    font-size: 18pt;
+    margin-top: 10%;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao p {
+    font-size: 16pt;
+  }
+
+  .sobremim .title p {
+
+    font-size: 12pt;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .sobremim .sectionSobreMim .apresentacao h2 {
+    font-size: 18pt;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao p {
+    font-size: 10pt;
+    margin-bottom: 10%;
+  }
+
+  .sobremim .sectionSobreMim .habilidades {
+    margin-top: 10%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sobremim .sectionSobreMim .habilidades h2 {
+    font-size: 18pt;
+    text-align: center;
+
+  }
+
+
+  .sobremim .sectionSobreMim .habilidades .lista {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  .sobremim .sectionSobreMim .habilidades .lista li {
+    font-size: 12pt;
+    padding: 0.8rem;
+  }
+
+  .sobremim .title h1 {
+    font-size: 22pt;
+  }
+
+  .sobremim .title p {
+    font-size: 14pt;
+  }
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+
+}
+
+@media (max-width: 375px) {
+  .sobremim .sectionSobreMim {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140ch;
+    width: 100vw;
+
+
+  }
+
+  .title h1 {
+    padding-top: 20%;
+  }
+
+  .sobremim .title p {
+    display: none;
+    font-size: 12pt;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .sobremim .sectionSobreMim .apresentacao h2 {
+    display: none;
+
+  }
+
+  .sobremim .sectionSobreMim .apresentacao p {
+    font-size: 10pt;
+    margin-bottom: 10%;
+  }
+
+  .sobremim .sectionSobreMim .habilidades {
+    margin-top: 10%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sobremim .sectionSobreMim .habilidades h2 {
+    font-size: 18pt;
+    text-align: center;
+
+  }
+
+
+  .sobremim .sectionSobreMim .habilidades .lista {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  .sobremim .sectionSobreMim .habilidades .lista li {
+    font-size: 12pt;
+    padding: 0.8rem;
+  }
+
+  .sobremim .title h1 {
+    font-size: 22pt;
+  }
+
+  .sobremim .title p {
+    font-size: 14pt;
+  }
+}
+
+
+
+
+/*CSS MENU 768PX*/
+
+@media (max-width: 768px) {
+  .projeto {
+    flex-direction: column;
+  }
+
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 31%;
+    background-color: rgb(148, 0, 234);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+
+  .links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .links a {
+    color: rgb(255, 255, 255);
+    padding: 5px 0;
+    font-size: 13;
+    display: block;
+  }
+
+  .links.active {
+    display: flex;
+  }
+}
+
+/*CSS MENU 375PX*/
+
+@media (max-width: 375px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 31%;
+    background-color: rgb(148, 0, 234);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+
+  .links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .links a {
+    color: rgb(255, 255, 255);
+    padding: 5px 0;
+    font-size: 10px;
+    display: block;
+  }
+
+  .links.active {
+    display: flex;
+  }
+}

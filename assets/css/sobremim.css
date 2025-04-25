@@ -1,0 +1,134 @@
+.sobremim {
+  width: 100%;
+  height: 140vh;
+  background-color: #d3d3d3;
+
+
+  & .title {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    & h1 {
+      font-family: 'Source Sans Pro', sans-serif;
+      letter-spacing: 1px;
+      font-size: 26pt;
+    }
+
+    & p {
+      margin-top: 1%;
+      font-size: 16pt;
+      text-align: center;
+      color: #575757;
+
+    }
+  }
+
+  & .sectionSobreMim {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-top: 6%;
+    padding-right: 5%;
+    height: 100vh;
+    background-color: #d3d3d3;
+
+
+
+    & .apresentacao {
+
+      width: 30vw;
+
+      & h2 {
+        font-size: 22pt;
+        font-weight: 500;
+        margin-bottom: 5%;
+      }
+
+      & p {
+        font-size: 14pt;
+        color: #575757;
+        margin-bottom: 5%;
+        line-height: 1.5;
+      }
+
+      & a {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 12pt;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(148, 0, 234);
+        color: white;
+      }
+    }
+
+    & .habilidades {
+
+
+      & h2 {
+        padding-left: 5%;
+        font-size: 22pt;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+
+      }
+
+      & .lista {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 10px;
+        color: white;
+        list-style: none;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 1rem;
+
+        & li {
+          color: white;
+          background-color: rgb(148, 0, 234);
+          padding: 1rem;
+          border-radius: 8px;
+          transition: transform 0.3s ease, background 0.3s ease;
+
+        }
+
+        & li:hover {
+          transform: scale(1.05);
+          background-color: #444;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+/* ANIMAÇÃO FADE */
+
+.block {
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
