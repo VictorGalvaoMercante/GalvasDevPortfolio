@@ -31,20 +31,31 @@ menuLinks.forEach(link => {
 
 const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
+if (isAppleMobile) {
+
+  const elementosComBlock = document.querySelectorAll('.block');
+  const elementosComBlockRight = document.querySelectorAll('.blockRight');
+
+  elementosComBlock.forEach(el => el.classList.remove('block'));
+  elementosComBlockRight.forEach(el => el.classList.remove('blockRight'));
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  const blocks = document.querySelectorAll('.block');
+  if (isAppleMobile) {
+    const elementos = document.querySelectorAll('.animar-scroll');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        // Opcional: parar de observar depois que apareceu
-        observer.unobserve(entry.target);
-      }
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('mostrar');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.4
     });
-  }, {
-    threshold: 0.4 // 40% visível = parecido com "entry cover 40%"
-  });
 
-  blocks.forEach(block => observer.observe(block));
+    elementos.forEach(el => observer.observe(el));
+  }
 });
+
