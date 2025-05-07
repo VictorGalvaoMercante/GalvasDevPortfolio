@@ -110,16 +110,36 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
 
   .sobremim .sectionSobreMim .apresentacao h2 {
     font-size: 18pt;
-    margin-top: 70%;
+    margin-top: 10%;
   }
 
   .sobremim .sectionSobreMim .apresentacao p {
+    font-size: 16pt;
+  }
+
+  .sobremim .title p {
+
     font-size: 12pt;
-    margin-bottom: 5%;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .sobremim .sectionSobreMim .apresentacao h2 {
+    font-size: 18pt;
+  }
+
+  .sobremim .sectionSobreMim .apresentacao p {
+    font-size: 10pt;
+    margin-bottom: 10%;
   }
 
   .sobremim .sectionSobreMim .habilidades {
-    margin-top: 5%;
+    margin-top: 10%;
     width: 100%;
     padding: 10px;
   }
@@ -149,6 +169,7 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
     font-size: 14pt;
   }
 }
+
 
 /*PROJETOS*/
 .projetos .title h1 {
