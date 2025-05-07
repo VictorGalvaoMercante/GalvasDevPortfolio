@@ -90,15 +90,19 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
 
   }
 
-  .title h1 {
+  .sobremim .title h1 {
 
     display: none;
 
 
   }
 
-  .title p {
+  .sobremim .title p {
     display: none;
+  }
+
+  .title h1 {
+    margin-top: 20%;
   }
 
   .sobremim .sectionSobreMim .apresentacao {

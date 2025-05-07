@@ -4,6 +4,9 @@ const elemento = document.querySelector(".digitando");
 
 let i = 0;
 
+const toggle = document.getElementById('menuToggle');
+const links = document.querySelector('.links');
+const menuLinks = document.querySelectorAll('.links a');
 function digitar() {
   if (i < texto.length) {
     elemento.innerHTML += texto.charAt(i);
@@ -15,32 +18,25 @@ function digitar() {
 window.onload = digitar;
 
 
-
-const toggle = document.getElementById('menuToggle');
-const links = document.querySelector('.links');
-const menuLinks = document.querySelectorAll('.links a'); // Pega todos os links dentro do menu
-
-// Ao clicar no toggle, abre ou fecha o menu
 toggle.addEventListener('click', () => {
   links.classList.toggle('active');
 });
 
-// Adiciona evento de clique em cada link para fechar o menu
+
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
     links.classList.remove('active');
   });
 });
 
+// Detecta se é um dispositivo Apple móvel
+const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-const blocks = document.querySelectorAll('.block');
+if (isAppleMobile) {
+  // Seleciona todos os elementos com a classe "block"
+  const elementosComBlock = document.querySelectorAll('.block');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
+  // Remove a classe "block" de cada um
+  elementosComBlock.forEach(el => el.classList.remove('block'));
+}
 
-blocks.forEach(block => observer.observe(block));
