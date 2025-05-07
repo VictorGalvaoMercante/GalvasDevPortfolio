@@ -88,6 +88,43 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
     padding: 10px;
 
 
+
+  }
+
+  .projetos .title h1 {
+    font-size: 22pt;
+  }
+
+  .projetos .title p {
+    font-size: 14pt;
+  }
+
+  .projetos .projeto {
+
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    width: auto;
+  }
+
+  .projetos .projeto .infoProjeto {
+    width: 80%;
+    text-align: center;
+  }
+
+  .projetos .projeto .infoProjeto h1 {
+    font-size: 12pt;
+    margin-top: 5%;
+  }
+
+  .projetos .projeto .infoProjeto p {
+    font-size: 12pt;
+  }
+
+  .projetos .projeto .infoProjeto a {
+    padding: 8px;
+    font-size: 10pt;
   }
 
   .infoProjeto a {

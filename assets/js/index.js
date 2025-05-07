@@ -29,15 +29,15 @@ menuLinks.forEach(link => {
   });
 });
 
-// Detecta quando o elemento entra na tela
-const elementos = document.querySelectorAll('.animar-scroll');
+const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-window.addEventListener('scroll', function () {
-  elementos.forEach(function (elemento) {
-    const rect = elemento.getBoundingClientRect();
-    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-      elemento.classList.add('show');
-    }
-  });
-});
+if (isAppleMobile) {
+
+  const elementosComBlock = document.querySelectorAll('.block');
+  const elementosComBlockRight = document.querySelectorAll('.blockRight');
+
+
+  elementosComBlock.forEach(el => el.classList.remove('block'));
+  elementosComBlockRight.forEach(el => el.classList.remove('blockRight'));
+}
 
