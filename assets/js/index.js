@@ -29,14 +29,22 @@ menuLinks.forEach(link => {
   });
 });
 
-// Detecta se é um dispositivo Apple móvel
 const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-if (isAppleMobile) {
-  // Seleciona todos os elementos com a classe "block"
-  const elementosComBlock = document.querySelectorAll('.block');
+document.addEventListener('DOMContentLoaded', () => {
+  const blocks = document.querySelectorAll('.block');
 
-  // Remove a classe "block" de cada um
-  elementosComBlock.forEach(el => el.classList.remove('block'));
-}
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // Opcional: parar de observar depois que apareceu
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.4 // 40% visível = parecido com "entry cover 40%"
+  });
 
+  blocks.forEach(block => observer.observe(block));
+});
