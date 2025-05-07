@@ -34,7 +34,7 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
   }
 
   .home {
-    height: 90vh;
+    height: 100vh;
   }
 
 
@@ -79,7 +79,7 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
 
 /*SOBRE MIM*/
 
-@media (max-width: 430px) {
+@media (max-width: 435px) {
   .sobremim .sectionSobreMim {
     flex-direction: column;
     justify-content: center;
@@ -91,7 +91,14 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
   }
 
   .title h1 {
-    padding-top: 20%;
+
+    display: none;
+
+
+  }
+
+  .title p {
+    display: none;
   }
 
   .sobremim .sectionSobreMim .apresentacao {
@@ -444,6 +451,12 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
   }
 
   .links.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 1020px) {
+  nav .menu-toggle {
     display: flex;
   }
 }
