@@ -121,16 +121,6 @@
   animation-range: entry cover 40%;
 }
 
-.animar-scroll {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 0.8s ease-out;
-}
-
-.animar-scroll.mostrar {
-  opacity: 1;
-  transform: scale(1);
-}
 
 
 @keyframes appear {

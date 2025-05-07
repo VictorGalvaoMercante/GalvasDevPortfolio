@@ -29,33 +29,15 @@ menuLinks.forEach(link => {
   });
 });
 
-const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+// Detecta quando o elemento entra na tela
+const elementos = document.querySelectorAll('.animar-scroll');
 
-if (isAppleMobile) {
-
-  const elementosComBlock = document.querySelectorAll('.block');
-  const elementosComBlockRight = document.querySelectorAll('.blockRight');
-
-  elementosComBlock.forEach(el => el.classList.remove('block'));
-  elementosComBlockRight.forEach(el => el.classList.remove('blockRight'));
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  if (isAppleMobile) {
-    const elementos = document.querySelectorAll('.animar-scroll');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('mostrar');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.4
-    });
-
-    elementos.forEach(el => observer.observe(el));
-  }
+window.addEventListener('scroll', function () {
+  elementos.forEach(function (elemento) {
+    const rect = elemento.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      elemento.classList.add('show');
+    }
+  });
 });
 
