@@ -407,13 +407,10 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
 
 
 /*CSS MENU 768PX*/
-
 @media (max-width: 768px) {
   .projeto {
     flex-direction: column;
   }
-
-
 
   nav {
     position: fixed;
@@ -430,10 +427,10 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
   }
 
   .links {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 115px;
     right: 0;
     width: 31%;
     background-color: rgb(148, 0, 234);
@@ -454,17 +451,12 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
   .links a {
     color: rgb(255, 255, 255);
     padding: 5px 0;
-    font-size: 13;
+    font-size: 13px;
     display: block;
-  }
-
-  .links.active {
-    display: flex;
   }
 }
 
-/*CSS MENU 375PX*/
-
+/* CSS MENU 375PX */
 @media (max-width: 375px) {
   nav {
     position: fixed;
@@ -481,7 +473,7 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
   }
 
   .links {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 70px;
@@ -507,10 +499,6 @@ Celulares maiores	≤ 576px	Usado como primeiro breakpoint em muitos casos*/
     padding: 5px 0;
     font-size: 10px;
     display: block;
-  }
-
-  .links.active {
-    display: flex;
   }
 }
 

@@ -1,17 +1,17 @@
 
 const texto = "OLÁ, SOU VICTOR GALVÃO.";
 const elemento = document.querySelector(".digitando");
-
-let i = 0;
-
 const toggle = document.getElementById('menuToggle');
 const links = document.querySelector('.links');
 const menuLinks = document.querySelectorAll('.links a');
+
+let i = 0;
+
 function digitar() {
   if (i < texto.length) {
     elemento.innerHTML += texto.charAt(i);
     i++;
-    setTimeout(digitar, 100); // velocidade da digitação
+    setTimeout(digitar, 100);
   }
 }
 
